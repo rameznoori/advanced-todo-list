@@ -34,3 +34,21 @@ function showTasks(){
     tasklist.innerHTML = localStorage.getItem("tasks");
 }
 showTasks();
+
+// section highlighting
+function highlightsection(sectionNumber){
+    let selectedSection = document.getElementById(`section${sectionNumber}`);
+    selectedSection.classList.add('glow');
+    selectedSection.classList.add('shake');
+    //bringing focus to input box of section 1
+    if(sectionNumber === 1){
+        let inputBox = document.querySelector('#section1 input');
+        if(inputBox){
+            inputBox.focus();
+        }
+    }
+    setTimeout(() => {
+        selectedSection.classList.remove('glow');
+        selectedSection.classList.remove('shake');
+    }, 1000);
+}
