@@ -12,35 +12,43 @@
         <nav class="main-nav" role="navigation">
             <ul>
                 <li>
-                    <a href="#" onclick="highlightsection(1)">Add New Task</a>
+                    <a href="#section1" onclick="highlightsection(1)">Add New Task</a>
                 </li>
                 <li>
-                    <a href="#">All Tasks</a>
+                    <a href="#section2" onclick="highlightsection(2)">Completed Tasks</a>
                 </li>
                 <li>
-                    <a href="">Completed Tasks</a>
+                    <a href="#section3" onclick="highlightsection(3)">All Tasks</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="newTask" id="section1">
-        <h3>To-Do List <img src="images/checked.png"></h3><hr>
-        <div class="inputTask">
-            <input type="text" id="taskinput" placeholder="Type here...">
-            <button onclick="addTask()">Add</button>
-        </div>
-        <ul class="newTask-list" id="newTaskList">
-            <!-- <li class="checked">task1</li>
-            <li>task2</li>
-            <li>task3</li> -->
-        </ul>
-    </section>
-    <section class="allTasks">
+    <main>
+        <section class="newTask" id="section1">
+            <h3>To-Do List <img src="images/checked.png"></h3><hr>
+            <div class="inputTask">
+                <input type="text" id="taskinput" placeholder="Type here...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul class="newTask-list" id="newTaskList">
+                <!-- <li class="checked">task1</li>
+                <li>task2</li>
+                <li>task3</li> -->
+            </ul>
+        </section>
+        <section class="completedTasks" id="section2">
+            <h3>Completed Tasks</h3><hr>
+            <ul class="completedTasks-List" id="completedTasksList">
 
-    </section>
-    <section class="CompletedTasks">
-        
-    </section>
+            </ul>
+        </section>
+        <section class="allTasks" id="section3">
+            <h3>All Tasks</h3><hr>
+            <ul class="allTasks-List" id="allTasksList">
+
+            </ul>
+        </section>
+    </main>
     <footer>
 
     </footer>
