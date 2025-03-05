@@ -5,17 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced To-Do List</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
-<body>
-    <main class="maincontainer">
-        <h1 class="app-title">Advanced To-Do List</h1>
-        <label for="new-task">Add New Task:</label>
-        <input type="text" id="new-task" class="new-task" required>
-        <button type="submit" class="sub-btn">Add Task</button>
-        <ul class="tasks">
-
+<body class="container">
+    <header class="header" role="banner">
+        <h1>Advanced To-Do List <img src="images/logo.png" alt="Logo"></h1>
+        <nav class="main-nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="">Add New Task</a>
+                </li>
+                <li>
+                    <a href="">All Tasks</a>
+                </li>
+                <li>
+                    <a href="">Completed Tasks</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="newTask">
+        <h3>To-Do List <img src="images/checked.png"></h3><hr>
+        <div class="inputTask">
+            <input type="text" id="taskinput" placeholder="Type here...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul class="newTask-list" id="newTaskList">
+            <!-- <li class="checked">task1</li>
+            <li>task2</li>
+            <li>task3</li> -->
         </ul>
-    </main>
+    </section>
+    <section class="allTasks">
+
+    </section>
+    <section class="CompletedTasks">
+        
+    </section>
+    <footer>
+
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>
