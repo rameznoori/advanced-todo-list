@@ -10,45 +10,39 @@
     background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(53,122,244,1) 19%, rgba(255,124,202,1) 100%); */
     background: #BFC3D4;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .header{
-    height: 7vh;
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #6E83C0;
     color: white;
-    padding: 5px 30px;
+    padding: 1rem 3rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 h1{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 20px;
-}
-.header h1 img{
-    padding-top: 8px;
-    width: 3.5vh;
-    height: 4vh;
-}
-.main-nav{
-    padding-top: 15px;
 }
 .main-nav ul{
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     list-style-type: none;
 }
 .main-nav ul li a{
     text-decoration: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
 }
