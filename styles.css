@@ -6,8 +6,9 @@
     font-family: Poppins;
 }
 .container{
-    background: rgb(2,0,36);
-    background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(53,122,244,1) 19%, rgba(255,124,202,1) 100%);
+    /* background: rgb(2,0,36);
+    background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(53,122,244,1) 19%, rgba(255,124,202,1) 100%); */
+    background: #BFC3D4;
     width: 100%;
     height: 100vh;
 }
@@ -17,7 +18,8 @@
     justify-content: space-between;
     align-content: center;
     flex: 1;
-    background-color: white;
+    background-color: #6E83C0;
+    color: white;
     padding: 5px 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -48,10 +50,10 @@ h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: black;
+    color: white;
 }
 .main-nav ul li a:hover{
-    color: #7aa1e2;
+    color: #E1A098;
 }
 main{
     display: flex;
