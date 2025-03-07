@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
+html{
+    scroll-padding-top: 9rem;
+}
 .container{
     /* background: rgb(2,0,36);
     background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(53,122,244,1) 19%, rgba(255,124,202,1) 100%); */
@@ -19,11 +22,12 @@
     flex-wrap: wrap;
     background-color: #6E83C0;
     color: white;
-    padding: 1rem 3rem;
+    padding: 0.5rem 1.5rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: sticky;
     top: 0;
+    bottom: 0;
     z-index: 1000;
 }
 h1{
